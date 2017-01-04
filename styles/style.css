@@ -1,0 +1,249 @@
+body {
+	background-color: #999999;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.9em;
+	min-width: 800px;
+}
+
+footer {
+	clear: both;
+	position: relative;
+	top: 20px;
+	font-size: 0.7em;
+	text-align: center;
+	color: #FFFFFF;
+	padding-bottom: 5px;
+}
+
+footer a {
+	color: #EEEEEE;
+}
+
+#logo {
+	left: 7%;
+	width: 28%;
+	height: 90%;
+	position: absolute;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url('../resources/logo.png');
+}
+
+header {
+	width: 70%;
+	left: 15%;
+	position: relative;
+	text-align: right;
+	background-color: #F2F2F4;
+	padding: 5px;
+	top: 10px;
+}
+
+nav {
+	position: relative;
+	-width: 99%;
+	color: #662222;
+	text-align: center;
+	border: 2px #662222;
+	border-style: solid none;
+	padding: 3px 0px;
+}
+
+nav a {
+	color: #662222;
+	text-decoration: none;
+	padding: 2px 5px;
+}
+
+nav a:hover {
+	color: #FFEEEE;
+	text-decoration: none;
+	background-color: #662222;
+	padding: 2px 5px;
+}
+
+#outer {
+	top: 20px;
+	width: 70%;
+	left: 15%;
+	position: relative;
+	padding: 5px;
+	height: 100%;
+	background-color: #F2F2F4;
+}
+
+#inner {
+	text-align: justify;
+	width: 100%;
+	position: relative;
+	overflow: auto;
+	top: 10px;
+	color: #331111;
+}
+
+#mainHeader {
+	width: 60%;
+	left: 38%;
+	position: relative;
+	-color: black;
+	color: #442222;
+}
+
+#versHeader {
+	margin-left:10px;
+	width: 60%;
+	left: 38%;
+	position: relative;
+	-color: black;
+	color: #442222;
+}
+
+#casy {
+	position: relative;
+	float: right;
+	width: 25%;
+	border: 2px #664400 solid;
+	font-size: 0.9em;
+	margin-bottom: 20px;
+	text-align: left;
+	text-indent: -8px;
+	background-color: #662222;
+	color: #EEEEEE;
+}
+
+#casy ul {
+	list-style-type: none;
+	padding: 3px 6px 3px 6px;
+}
+
+#casy li {
+	margin-left: 10px;
+}
+
+#content {
+	position: relative;
+	float: left;
+	left: 4%;
+	width: 66%;
+	line-height: 150%;
+	text-indent: 15px;
+	overflow: auto;
+}
+
+.mainList {
+	font-weight: bolder;
+}
+
+.innerList {
+	font-weight:normal;
+}
+
+#aktuality {
+	width: auto;
+  color: #EEEEEE;
+  font-size: 0.9em;
+  font-weight: bold;
+  padding: 4px;
+  margin-top: 10px;
+  position: relative;
+	white-space: nowrap;
+	overflow: hidden;
+	background-color: #662222;
+}
+
+#aktuality p {
+	font-weight: normal;
+	margin: 5px 0;
+}
+
+.without_indent {
+	text-indent: 0;
+}
+
+.mobileShow {
+    display: none;
+}
+
+#lang {
+	position: fixed;
+	right: 20px;
+	top: 0;
+	background-color:#EEEEEE;
+	padding: 2px 10px 5px 10px;
+}
+
+#aktuality a {
+	color: lightcyan;
+}
+
+.pblock {
+	display: inline;
+}
+
+#newsTitle {
+	display: inline;
+}
+
+#newsList {
+	display: inline;
+}
+
+#newsList p {
+	border-right: 1px solid white;
+	padding: 0 5px 0 5px;
+}
+
+.noIndent {
+	white-space: nowrap;
+	text-align: left;
+}
+
+.smallerText {
+	font-size: smaller;
+}
+
+.more {
+	display: inline;
+	right: 0;
+	position: absolute;
+	bottom: 0;
+	padding: 0 3px 0 70px;
+	background: #662222;
+	background: -webkit-linear-gradient(left,rgba(255,0,0,0), rgba(102,34,34,1), rgba(102,34,34,1)); /*Safari 5.1-6*/
+ 	background: -o-linear-gradient(right,rgba(255,0,0,0), rgba(102,34,34,1), rgba(102,34,34,1)); /*Opera 11.1-12*/
+ 	background: -moz-linear-gradient(right,rgba(255,0,0,0), rgba(102,34,34,1), rgba(102,34,34,1)); /*Fx 3.6-15*/
+ 	background: linear-gradient(to right, rgba(255,0,0,0), rgba(102,34,34,1), rgba(102,34,34,1)); /*Standard*/
+}
+
+#inner a {
+	color: #662222;
+}
+
+@media only screen and (max-device-width: 480px) {
+    #casy {
+         display: none;
+     }
+
+    #content {
+        width: 90%;
+    }
+
+    #logo {
+        visibility: hidden;
+    }
+
+    #mainHeader {
+        width: 90%;
+        left: 5%;
+    }
+
+    #versHeader {
+        width: 90%;
+        left: 5%;
+    }
+
+    .mobileShow {
+        display: initial;
+    }
+}
